@@ -5,6 +5,10 @@ from django.contrib.auth.models import User
 # Profile model
 class Profile(models.Model):
     user = models.OneToOneField(User,on_delete=models.CASCADE)
+    avarta = models.ImageField()
+
+    def __str__(self):
+        return self.user.username
 
 # Recipe model
 class Recipe(models.Model):

@@ -1,6 +1,8 @@
 {% extends 'base.html' %}
 {% block content %}
 
-<p>Profile</p>
+<p>{{user.username}} Profile</p>
+<p> Email: {{user.email}}</p>
+<p> Date joined: {{user.date_joined}}
 
 {% endblock %}
