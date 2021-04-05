@@ -20,7 +20,8 @@
 - Click on Read More to see the receipe detail.
 - Sign up a new account.
 - Log in if he/she has already registered.
-**User after login should be able to:**
+- 
+**After login, user should be able to:**
 - Be redirected to their public profile page
 - Change his/her name
 - Change his/her email
@@ -28,8 +29,30 @@
 
 ## Wireframes:
 
+**Homepage**
+
+<img src="images/home.png">
+
+<img src="images/home1.png">
+
+**Receipe page**
+
+<img src="images/receipe.png">
+
+**About page**
+
+<img src="images/about.png">
+
+**Profile Page**
+
+<img src="images/profile.png">
+
+
 ## Entity relationship diagram:
 
-
+<img src="images/erd.png">
 
 ## Futute features:
+**After login, user shouls be able to:**
+- Add comments in the receipe page
+- Delete comments in the receipe page
