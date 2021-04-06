@@ -1,3 +1,4 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -5,30 +6,50 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Vy's Kitchen</title>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+  <link rel="shortcut icon" type="image/png" href="{% static 'favicon1.ico' %}"/>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+  <link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/js/all.min.js"></script>
 </head>
 <body>
   <header class="navbar-fixed">
-    <nav>
+    <nav class="white">
       <div class="nav-wrapper">
         <ul>
-          <li><a href="/" class="left brand-logo">Vy's Kitchen</a></li>
+          <li><a href="/"><img class="logo" src="static/logo.png" width="55px"></a></li>
         </ul>
         <ul class="right">
-          <li><a href="/about">About</a></li>
-          <li><a href="/accounts/profile">{{user.username}}'s Profile</a></li>
-          <li><a href="/accounts/signup">Register</a></li>
-          <li><a href="/accounts/login">Login</a></li>
+          <li><a class="pink-text" href="/about">About</a></li>
+          <li><a class="pink-text" href="/accounts/profile">{{user.username}}'s Profile</a></li>
+          <li><a class="pink-text" href="/accounts/signup">Register</a></li>
+          <li><a class="pink-text" href="/accounts/login">Login</a></li>
         </ul>
       </div>
     </nav>
+    <section class="wide-header">
+    
+    </section>
   </header>
   <main class="container">
     {% block content %}
     {% endblock %}
   </main>
-  <footer class="page-footer">
-    <div class="right">All Rights Reserved, &copy; 2019 Vy's Kitchen &nbsp;</div>
+  <footer class="white center">
+    <a href="/">Contact Us | </a>
+    <a href="/">FAQ | </a>
+    <a href="/">Reviews | </a>
+    <a href="/">Blog | </a>
+    <a href="/">Privacy Police | </a>
+    <a href="/">Legal Stuff</a>
+    <h5>Follow Us On Social Media</h5>
+    <a href="/"><i class="fab fa-facebook fa-3x pink-text"></i></a>
+    <a href="/"><i class="fab fa-twitter fa-3x pink-text"></i></a>
+    <a href="/"><i class="fab fa-instagram fa-3x pink-text"></i></a>
+    <a href="/"><i class="fab fa-google fa-3x pink-text"></i></a>
+    <a href="/"><i class="fab fa-linkedin fa-3x pink-text"></i></a>
+    <p>Copyright&copy; 2021 Vy's Kitchen. All Rights Reserved.</p>
   </footer>
 </body>
 </html>
