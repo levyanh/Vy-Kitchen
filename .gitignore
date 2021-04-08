@@ -1,5 +1,2 @@
 .env/
-*.pyc/
-./__pycache__/
-
-*$py.class
+*.pyc
