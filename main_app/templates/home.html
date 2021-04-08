@@ -1,2 +1,7 @@
-<p>Hompage</p>
-<p> Recipe {{ recipe.title }} </p>
+{% extends 'base.html' %}
+
+{% block content %}
+Homepage
+<p> Recipe: {{recipe.title}}</p><br>
+<img class="recipe" src="{{recipe.image}}">
+{% endblock %}
