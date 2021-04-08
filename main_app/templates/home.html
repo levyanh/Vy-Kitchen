@@ -7,6 +7,7 @@
         <div class="col s12 m7">
             <div class="card">
             <div class="card-image">
+                <p> ID: {{recipe.id}}</p>
                 <img src="{{ recipe.image }}">
                 <span class="card-title">{{recipe.title}}</span>
             </div>
@@ -14,10 +15,9 @@
                 <p>{{recipe.instruction|truncatewords:40}}</p>
             </div>
             <div class="card-action">
-                <a href="#">Read more</a>
+                {% comment %} <a href="{% url 'recipe_detail' recipe.id %}">Read more</a> {% endcomment %}
             </div>
             </div>
         </div>
     </div>
-
 {% endblock %}
