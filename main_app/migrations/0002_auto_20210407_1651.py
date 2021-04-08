@@ -21,7 +21,7 @@ class Migration(migrations.Migration):
         migrations.AddField(
             model_name='profile',
             name='avarta',
-            field=models.ImageField(default='default_avarta.jpg', upload_to='user_avarta'),
+            field=models.ImageField(default='default_avatra.jpg', upload_to='user_avatar'),
         ),
         migrations.AlterField(
             model_name='profile',

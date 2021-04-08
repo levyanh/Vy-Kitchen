@@ -1,0 +1,9 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="container">
+    {{recipe.title}}
+    <img src="{{recipe.image}}">
+    {{recipe.ingredient}}
+    {{recipe.instruction}}
+{% endblock %}
